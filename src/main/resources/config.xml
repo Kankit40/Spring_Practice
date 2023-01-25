@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context-2.5.xsd">
+
+
+    <bean class = "com.bridgelabz.Data" name = "data"  >
+
+    <property name="name" value="Ankit"></property>
+        <property name="id" value="34"></property>
+
+        <property name="phone">
+            <list>
+               <value>"99999"</value>
+                <value>"5555"</value>
+                <value>"3456"</value>
+                <value>"3456"</value>
+            </list>
+        </property>
+
+       <!-- <property name="city">
+            <set>
+                <value>"Faridabad"</value>
+                <value>"Palwal"</value>
+            </set>
+        </property>
+
+        <property name="game">
+            <map>
+                <entry key="Football" value="noob"></entry>
+                <entry key="Criket" value="pro"></entry>
+            </map>
+        </property>-->
+
+
+    </bean>
+         </beans>
