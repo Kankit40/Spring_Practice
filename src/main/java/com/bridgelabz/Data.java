@@ -11,30 +11,45 @@ public class Data {
     private Set<String> city;
     private Map<String,String> game;
 
+    public String getName() {
+        return name;
+    }
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public int getId() {
+        return id;
     }
 
     public void setId(int id) {
         this.id = id;
     }
 
-    public void setList(List<String> list) {
-        this.phone = list;
+    public List<String> getPhone() {
+        return phone;
     }
 
-    public void setSet(Set<String> set) {
-        this.city = set;
+    public void setPhone(List<String> phone) {
+        this.phone = phone;
     }
 
-    public void setMap(Map<String, String> map) {
-        this.game = map;
+    public Set<String> getCity() {
+        return city;
     }
 
+    public void setCity(Set<String> city) {
+        this.city = city;
+    }
 
+    public Map<String, String> getGame() {
+        return game;
+    }
 
-
+    public void setGame(Map<String, String> game) {
+        this.game = game;
+    }
 
     @Override
     public String toString() {

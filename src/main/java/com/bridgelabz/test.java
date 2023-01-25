@@ -10,7 +10,7 @@ public class test {
        ApplicationContext context = new ClassPathXmlApplicationContext("config.xml");
 
 
-       Data a = (Data)context.getBean("data");
+       test2 a = (test2) context.getBean("test21");
         System.out.println(a);
 
 

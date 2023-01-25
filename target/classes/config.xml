@@ -22,7 +22,7 @@ http://www.springframework.org/schema/context/spring-context-2.5.xsd">
             </list>
         </property>
 
-       <!-- <property name="city">
+        <property name="city">
             <set>
                 <value>"Faridabad"</value>
                 <value>"Palwal"</value>
@@ -34,8 +34,15 @@ http://www.springframework.org/schema/context/spring-context-2.5.xsd">
                 <entry key="Football" value="noob"></entry>
                 <entry key="Criket" value="pro"></entry>
             </map>
-        </property>-->
+        </property>
 
 
+    </bean>
+
+    <bean name="test21" class="com.bridgelabz.test2">
+        <property name="age" value="23"></property>
+        <property name="d">
+            <ref bean="data"></ref>
+        </property>
     </bean>
          </beans>
